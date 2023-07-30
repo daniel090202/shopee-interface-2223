@@ -923,6 +923,8 @@
     background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
+    padding: 14px 22px;
+    border-radius: 2px;
 }
 
 .home-filter__label {
