@@ -139,3 +139,63 @@ html {
     align-items: center;
     justify-content: space-around;
 }
+
+/* Drop-down Selection */
+.selection {
+    position: relative;
+    min-width: 140px;
+    height: 26px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selection:hover 
+.selection-list {
+    display: block;
+}
+
+.selection-label {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.selection-icon {
+    font-size: 1.4rem;
+    color: rgb(131, 131, 131);
+    position: relative; 
+    top: 1px;
+}
+
+.selection-list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% - 8px);
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 12px;
+    list-style: none;
+    display: none;
+    box-shadow: 2px 4px 2px #e0e0e0;
+}
+
+.selection-item {
+
+}
+
+.selection-link {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 6px 0;
+}
+
+.selection-link:hover {
+    color: var(--primary-color);
+}

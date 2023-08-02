@@ -928,32 +928,31 @@
 }
 
 .home-filter__label {
-
+    color: #555555;
+    font-size: 1.4rem;
+    margin-right: 16px;
 }
 
-.home-filter__selection {
-
-}
-
-.home-filter__selection-label {
-
-}
-
-.home-filter__selection-icon {
-
+.home-filter__button {
+    min-width: 90px;
+    margin-right: 12px;
 }
 
 .home-filter__pagination {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 .home-filter__pagination-page {
-    
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-right: 22px;
 }
 
 .home-filter__pagination-current-page {
-
+    color: var(--primary-color);
 }
 
 .home-filter__pagination-total-page {
@@ -961,11 +960,39 @@
 }
 
 .home-filter__pagination-control {
-
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    width: 48px;
+    height: 24px;
 }
 
 .home-filter__pagination-button {
+    flex: 1;
+    display: flex;
+    background-color: var(--white-color);
+    text-decoration: none;
+}
 
+.home-filter__pagination-button:first-child {
+    border-right: 1px solid #eeeeee;
+}
+
+.home-filter__pagination-button--disabled 
+.home-filter__pagination-button-icon {
+    color: #cccccc;
+    cursor: default;
+}
+
+.home-filter__pagination-button--disabled {
+    cursor: default;
+}
+
+.home-filter__pagination-button-icon {
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #555555;
 }
 
 

@@ -261,12 +261,20 @@
                     <div class="grid__column-10">
                         <div class="home-filter">
                             <span class="home-filter__label">Sort by</span>
-                            <button class="button">Popular</button>
-                            <button class="button button--primary">Latest</button>
-                            <button class="button">Most Sold</button>
-                            <div class="home-filter__selection">
-                                <span class="home-filter__selection-label">Price</span>
-                                <i class="home-filter__selection-icon fa-solid fa-angle-down"></i>
+                            <button class="home-filter__button button">Popular</button>
+                            <button class="home-filter__button button button--primary">Latest</button>
+                            <button class="home-filter__button button">Most Sold</button>
+                            <div class="selection">
+                                <span class="selection-label">Price</span>
+                                <i class="selection-icon fa-solid fa-angle-down"></i>
+                                <ul class="selection-list">
+                                    <li class="selection-item">
+                                        <a href="#" class="selection-link">Lowest To Highest</a>
+                                    </li>
+                                    <li class="selection-item">
+                                        <a href="#" class="selection-link">Highest To Lowest</a>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="home-filter__pagination">
                                 <span class="home-filter__pagination-page">
@@ -275,11 +283,11 @@
                                     <span class="home-filter__pagination-total-page">14</span>
                                 </span>
                                 <div class="home-filter__pagination-control">
-                                    <a href="" class="home-filter__pagination-button">
-                                        <i class="fa-solid fa-angle-left"></i>
+                                    <a href="" class="home-filter__pagination-button home-filter__pagination-button--disabled">
+                                        <i class="home-filter__pagination-button-icon fa-solid fa-angle-left"></i>
                                     </a>
                                     <a href="" class="home-filter__pagination-button">
-                                        <i class="fa-solid fa-angle-right"></i>
+                                        <i class="home-filter__pagination-button-icon fa-solid fa-angle-right"></i>
                                     </a>
                                 </div>
                             </div>
