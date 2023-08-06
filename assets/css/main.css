@@ -148,10 +148,6 @@
     top: -12px;
 }
 
-.header__navbar-user-item {
-
-}
-
 .header__navbar-user-item a {
     display: block;
     text-decoration: none;
@@ -1089,10 +1085,6 @@
     font-size: 1.6rem;
 }
 
-.home-product-item__like--liked {
-
-}
-
 i.home-product-item__like-filled {
     color: var(--primary-color);
     display: none;
@@ -1107,11 +1099,6 @@ i.home-product-item__like-filled {
 .home-product-item__like-empty {
     display: none;
 }
-
-.home-product-item__like-empty {
-
-}
-
 
 .home-product-item__rating {
     font-size: 1.2rem;
@@ -1136,10 +1123,6 @@ i.home-product-item__like-filled {
     font-size: 1.4rem;
     font-weight: 600;
     color: #595959;
-}
-
-.home-product-item__origin-brand {
-
 }
 
 .home-product-item__origin-name {
@@ -1209,3 +1192,94 @@ i.home-product-item__like-filled {
     color: var(--white-color);
     text-transform: uppercase;
 }
+
+/* Home Product - Pagination */
+.home-product-pagination {
+    margin: 30px;
+}
+
+/* Footer */
+.footer {
+    padding-top: 16px;
+    border-top: 4px solid var(--primary-color);
+}
+
+.footer__heading {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.footer-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-item {
+
+}
+
+.footer-item__link {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer-item__link:hover {
+    color: var(--primary-color);
+}
+
+.footer-item__link-icon {
+    font-size: 1.6rem;
+}
+
+.footer-item__link-name {
+    margin: 0 0 0 4px;
+    color: var(--text-color);
+}
+
+.footer__download {
+    display: flex;
+}
+
+.footer__download-qr {
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--border-color);
+}
+
+.footer__download-apps {
+    flex: 1;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__download-apps-link {
+    text-decoration: none;
+    color: transparent;
+}
+
+.footer__download-image {
+    height: 20px;
+}
+
+.footer__copyright {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+}
+
+.footer__copyright-content {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
