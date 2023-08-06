@@ -166,6 +166,7 @@ html {
 }
 
 .selection-label {
+    color: var(--text-color);
     font-size: 1.4rem;
     font-weight: 600;
 }
@@ -179,6 +180,7 @@ html {
 
 .selection-list {
     position: absolute;
+    z-index: 1;
     left: 0;
     right: 0;
     top: calc(100% - 8px);
@@ -187,11 +189,7 @@ html {
     padding: 8px 12px;
     list-style: none;
     display: none;
-    box-shadow: 2px 4px 2px #e0e0e0;
-}
-
-.selection-item {
-
+    box-shadow: 0 2px 4px #e0e0e0;
 }
 
 .selection-link {
