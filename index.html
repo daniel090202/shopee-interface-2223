@@ -120,7 +120,8 @@
 
                 <!-- Search Bar -->
                 <div class="header__searchbar">
-                    <label for="mobile-searchbar-checkbox" class="header__mobile-searchbar">
+                    <!-- This label is used on mobile to show the search bar. -->
+                    <label for="mobile-searchbar-checkbox" class="header__mobile-searchbar hide-on-pc hide-on-tablet">
                         <i class="header__mobile-searchbar-icon fas fa-search"></i>
                     </label>
 
@@ -132,6 +133,7 @@
                         </a>
                     </div>
 
+                    <!-- This input is a pseudo elementto show the search bar on mobile. -->
                     <input hidden type="checkbox" name="" id="mobile-searchbar-checkbox" class="header__searchbar-mobile-checkbox">
                     
                     <div class="header__searchbar-search">
@@ -261,8 +263,8 @@
         </header>
         <div class="app__container">
             <div class="grid wide">
-                <div class="app__container-content grid__row">
-                    <div class="grid__column-2">
+                <div class="app__container-content row s-gutters">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">
                                 <span class="category__heading-name">Category</span>
@@ -280,7 +282,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <!-- Home Filter -->
                         <div class="home-filter hide-on-mobile-and-tablet">
                             <span class="home-filter__label">Sort by</span>
@@ -317,9 +319,9 @@
                         </div>
                         <!-- Home Filter --> 
                         <div class="home-product">
-                            <div class="grid__row">
+                            <div class="row s-gutters">
                                 <!-- Product -->
-                                <div class="grid__column-2-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__image"
                                             style="background-image: url(https://i.pinimg.com/564x/25/9c/6c/259c6cc4bbe27d5a866e4fc29be84a0e.jpg)"></div>
@@ -356,7 +358,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__image"
                                             style="background-image: url(https://i.pinimg.com/564x/25/9c/6c/259c6cc4bbe27d5a866e4fc29be84a0e.jpg)"></div>
@@ -393,7 +395,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__image"
                                             style="background-image: url(https://i.pinimg.com/564x/25/9c/6c/259c6cc4bbe27d5a866e4fc29be84a0e.jpg)"></div>
@@ -430,7 +432,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__image"
                                             style="background-image: url(https://i.pinimg.com/564x/25/9c/6c/259c6cc4bbe27d5a866e4fc29be84a0e.jpg)"></div>
@@ -467,7 +469,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a href="#" class="home-product-item">
                                         <div class="home-product-item__image"
                                             style="background-image: url(https://i.pinimg.com/564x/25/9c/6c/259c6cc4bbe27d5a866e4fc29be84a0e.jpg)"></div>
@@ -526,6 +528,11 @@
                             </li>
                             <li class="pagination-item">
                                 <a href="" class="pagination-item__link">
+                                    <span class="pagination-item__page-number">...</span>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
                                     <span class="pagination-item__page-number">3</span>
                                 </a>
                             </li>
@@ -547,8 +554,8 @@
         </div>
         <footer class="footer">
             <div class="grid wide">
-                <div class="grid__row">
-                    <div class="grid__column-2-10">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Customer Services</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -562,7 +569,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-10">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Introduction</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -576,7 +583,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-10">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Category</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -590,7 +597,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-10">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Observation</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -613,7 +620,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-10">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Store On Apps</h3>
                         <div class="footer__download">
                             <img src="./assets/images/qr_code.png" alt="" class="footer__download-qr">

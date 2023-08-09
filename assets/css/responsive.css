@@ -1,3 +1,10 @@
+/* Only PC resolution */
+@media (min-width: 1023px) {
+    .hide-on-pc {
+        display: none;
+    }
+}
+
 /* Both for mobile and tablet resolution. */
 @media (max-width: 1023px) {
     :root {
@@ -8,6 +15,8 @@
     .hide-on-mobile-and-tablet {
         display: none;
     }
+
+    /* Adjust some features to fit the screen of both tablet and mobile. */
 
     .header {
         position: fixed; 
@@ -32,9 +41,12 @@
         display: none;
     }
 
+    /* Create a sort bar on both tablet and mobile screen. */
     .header__sortbar {
         display: flex;
     }
+
+    
 }
 
 /* Only tablet resolution. */
@@ -59,6 +71,11 @@
 @media (max-width: 740px) {
     .hide-on-mobile {
         display: none;
+    }
+
+    .app__container {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .header__searchbar {
@@ -106,5 +123,14 @@
         left: 0;
         right: 0;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .pagination-item__icon, .pagination-item__page-number {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .pagination-item__link {
+        min-width: 20px;
     }
 }

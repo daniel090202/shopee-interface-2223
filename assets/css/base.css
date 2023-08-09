@@ -233,7 +233,7 @@ html {
     height: 30px;
 }
 
-.pagination-item__icon, .pagination-item__page-number{
+.pagination-item__icon, .pagination-item__page-number {
     font-size: 1.2rem;
     font-weight: 800;
     color: #939393;

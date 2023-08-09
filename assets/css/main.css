@@ -1,3 +1,7 @@
+.app {
+    overflow: hidden;
+}
+
 /* Header - Navigation Bar */
 .header {
     height: var(--header-height);
@@ -626,7 +630,7 @@
 }
 
 .header__mobile-searchbar-icon {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 800;
     color: var(--white-color);
 }
@@ -1264,6 +1268,7 @@ i.home-product-item__like-filled {
 /* Home Product - Pagination */
 .home-product-pagination {
     margin: 30px;
+    padding-left: 0;
 }
 
 /* Footer */
