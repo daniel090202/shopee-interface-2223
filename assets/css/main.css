@@ -478,6 +478,7 @@
 .header__searchbar-logo-link {
     text-decoration: none;
     color: transparent;
+    display: block;
 }
 
 .header__searchbar-logo-image {
@@ -619,6 +620,22 @@
     color: var(--white-color);
 }
 
+/* Search Bar: dispplay on mobile. */
+.header__mobile-searchbar {
+    
+}
+
+.header__mobile-searchbar-icon {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--white-color);
+}
+
+.header__searchbar-mobile-checkbox:checked ~
+.header__searchbar-search {
+    display: flex;
+}
+
 /* Search Bar: Search History */
 .header__searchbar-search-history {
     position: absolute;
@@ -641,7 +658,7 @@
 .header__searchbar-search-history-heading {
     margin: 12px 8px 0;
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 800;
     color: #999;
 }
 
@@ -662,7 +679,8 @@
 
 .header__searchbar-search-history-item a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
     line-height: 38px;
     display: block;
     color: var(--text-color);
@@ -750,15 +768,15 @@
 .header__cart-list-heading {
     text-align: left;
     margin: 12px 0 0 12px;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 800;
     color: #999;
 }
 
 .header__cart-list {
     padding-left: 0;
     list-style: none;
-    height: 50vh;
+    max-height: 50vh;
     overflow-y: auto;
 }
 
@@ -861,6 +879,56 @@
     background-color: #f05d41;
 }
 
+/* Header - Sort Bar: displayed when on tablet or mobile */
+.header__sortbar {
+    position: fixed; 
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: var(--sortbar-height);
+    background-color: var(--white-color);
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display: none;
+}
+
+.header__sortbar-item {
+    flex: 1;
+}
+
+.header__sortbar-link {
+    height: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: var(--sortbar-height);
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.header__sortbar-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 60%;
+    border-left: 2px solid #e5e5e5;
+    transform: translateY(-50%);
+}
+
+.header__sortbar-item:first-child 
+.header__sortbar-link::before {
+    display: none;
+}
+
+.header__sortbar-link--active {
+    color: var(--primary-color);
+}
 /* Container */
 .app__container {
     background-color: #f5f5f5;

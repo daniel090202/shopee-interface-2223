@@ -120,6 +120,10 @@
 
                 <!-- Search Bar -->
                 <div class="header__searchbar">
+                    <label for="mobile-searchbar-checkbox" class="header__mobile-searchbar">
+                        <i class="header__mobile-searchbar-icon fas fa-search"></i>
+                    </label>
+
                     <div class="header__searchbar-logo hide-on-tablet">
                         <a href="/" class="header__searchbar-logo-link">
                             <svg viewBox="0 0 192 65" class="header__searchbar-logo-image"><g fill-rule="evenodd">
@@ -127,6 +131,9 @@
                                 </path></g></svg>
                         </a>
                     </div>
+
+                    <input hidden type="checkbox" name="" id="mobile-searchbar-checkbox" class="header__searchbar-mobile-checkbox">
+                    
                     <div class="header__searchbar-search">
                         <div class="header__searchbar-search-box">
                             <input type="text" class="header__searchbar-search-input" placeholder="Search for product">
@@ -237,6 +244,20 @@
                 </div>
                 <!-- Search Bar -->
             </div>
+            <ul class="header__sortbar">
+                <li class="header__sortbar-item">
+                    <a href="#" class="header__sortbar-link">Relavant</a>
+                </li>
+                <li class="header__sortbar-item">
+                    <a href="#" class="header__sortbar-link header__sortbar-link--active">Latest</a>
+                </li>
+                <li class="header__sortbar-item">
+                    <a href="#" class="header__sortbar-link">Most sold</a>
+                </li>
+                <li class="header__sortbar-item">
+                    <a href="#" class="header__sortbar-link">Price</a>
+                </li>
+            </ul>
         </header>
         <div class="app__container">
             <div class="grid wide">
