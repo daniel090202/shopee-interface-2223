@@ -1,0 +1,36 @@
+/* Both for mobile and tablet resolution. */
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 54px;
+        --navbar-height: 0;
+    }
+
+    .hide-on-mobile-and-tablet {
+        display: none;
+    }
+}
+
+/* Only tablet resolution. */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header__searchbar-cart {
+        width: 80px;
+        text-align: right;
+    }
+    
+    .header_searchbar-cart-notice {
+        top: 2px;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+}
+
+/* Only mobile resolution. */
+@media (max-width: 740px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
