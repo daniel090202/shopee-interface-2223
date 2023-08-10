@@ -78,6 +78,7 @@
 .header__navbar-item-title--disabled {
     cursor: text;
     color: var(--white-color);
+    margin-left: 2px;
 }
 
 .header__navbar-icon-link {
@@ -337,7 +338,6 @@
 }
 
 /* Modal - Register Form */
-
 .authentication-form {
     width: 100%;
     overflow: hidden;
