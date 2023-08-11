@@ -25,33 +25,6 @@ html {
     box-sizing: border-box;
 }
 
-/* Responsive Layout */
-/* Flex Layout */
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -5px;
-    margin-right: -5px;
-}
-
-.grid__column-2 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 16.6667%;
-}
-
-.grid__column-2-10 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 20%;
-}
-
-.grid__column-10 {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 83.3333%;
-}
-
 /* Animations */
 @keyframes fadeIn {
     from {
@@ -121,6 +94,10 @@ html {
 .button.button--primary {
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+
+.button--primary:hover {
+    filter: brightness(.96);
 }
 
 .button.button--disabled {

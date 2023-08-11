@@ -343,6 +343,10 @@
     display: none;
 }
 
+.register-form, .login-form {
+    display: none;
+}
+
 .authentication-form {
     width: 100%;
     overflow: hidden;
@@ -446,8 +450,13 @@
 }
 
 .authentication-form__social--google {
-    background-color: var(--white-color);
     padding: 12px 10px;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+.authentication-form__social--google span {
+    color: var(--text-color);
 }
 
 /* Modal - Login Form */
@@ -458,7 +467,8 @@
 
 .authentication-form__assitance-link {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
     color: #939393;
 }
 
@@ -471,6 +481,10 @@
 
 .authentication-form__assitance-forget {
     color: var(--primary-color);
+}
+
+.authentication-form__assitance-forget:hover {
+    filter: brightness(0.8);
 }
 
 /* Header - Search Bar */
