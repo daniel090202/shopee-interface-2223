@@ -69,22 +69,6 @@
         font-size: 1.2rem;
         line-height: 1.2rem;
     }
-
-    .header__sortbar-item:first-child 
-    .header__sortbar-link::before {
-        display: block;
-    }
-
-    .header__sortbar-item:last-child 
-    .header__sortbar-link::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 0;
-        height: 60%;
-        border-left: 2px solid #e5e5e5;
-        transform: translateY(-50%);
-    }
 }
 
 /* Only mobile resolution. */
