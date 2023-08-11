@@ -908,7 +908,7 @@
     height: 100%;
     text-decoration: none;
     color: var(--text-color);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     line-height: var(--sortbar-height);
     text-align: center;
@@ -932,7 +932,9 @@
 }
 
 .header__sortbar-link--active {
+    font-size: 1.8rem;
     color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 /* Container */
 .app__container {
@@ -1058,9 +1060,11 @@
     text-align: center;
     overflow: hidden;
     display: block;
+    /* Display only two lines of category name. */
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    /* Prevent user to select or hightlight the text in category button. */
     user-select: none;
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
